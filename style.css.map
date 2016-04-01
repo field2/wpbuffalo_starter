@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA;;EAEE;AAEF;EACC,UAAS;EACT,WAAU;EACV,uBAAsB,EACtB","file":"style.css","sourcesContent":["/*\r\nTheme name:30 Minute Theme\r\n*/\r\n\r\n* {\r\n\tmargin:0;\r\n\tpadding:0;\r\n\tbox-sizing:border-box;\r\n}\r\nbody {\r\n\r\n}"],"sourceRoot":"/source/"}

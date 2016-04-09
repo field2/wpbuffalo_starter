@@ -1,5 +1,5 @@
-<!-- index.php
-This is the default file in the theme hierarchy. If no other templates are available, WP loads this. -->
+<!-- single.php
+This file loads when someone visits a single blog post. It's the "permalink" of the post. -->
 <?php // Use php to process the next line of code
 get_header(); // this command loads header.php and adds all the code in that file to the top of this file
 ?><!--  All done using php for now -->
@@ -30,4 +30,4 @@ get_header(); // this command loads header.php and adds all the code in that fil
 <!-- everything below here will be on all the pages of the site -->
 <?php // Use php to process the next line of code
 get_footer(); // this command loads footer.php and adds all the code in that file to the bottom of this file
-?><!--  All done using php for now
+?><!--  All done using php for now -->

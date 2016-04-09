@@ -3,10 +3,60 @@ Theme name:30 Minute Theme
 */
 
 * {
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    box-model: border-box;
 }
-body {
 
+body {
+    display: flex;
+    min-height: 100vh;
+    height: 100vh;
+    /* ie doesn't like min-height here, which is too bad because it makes more sense. */
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+header, footer {
+    text-align: center;
+    background: #aaa;
+}
+
+#pagecontent {
+    padding: 1em;
+    flex: 1;
+}
+
+nav {
+    ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+nav, h1, h2, p {
+    margin:0.3em 0;
+}
+
+#sidebar li {
+list-style-type: none;
+}
+
+
+@media screen and (min-width:800px) {
+#main, #sidebar {
+        float:left;
+    }
+    #main {
+        width:72%;
+        margin-right: 1em;
+    }
+    #sidebar {
+        margin-left: 1em;
+        width:22%;
+    }
 }

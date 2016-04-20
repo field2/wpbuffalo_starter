@@ -21,7 +21,7 @@ This file gets loaded by the command get_header(); and we see that on every page
 		wp_head(); // This command loads additional resources
 	?><!-- All done using php for now -->
 </head><!-- All done with the head -->
-<body><!-- The "body" of the site; this element contains everything you can see. -->
+<body <?php body_class(); ?><!-- The "body" of the site; this element contains everything you can see. -->
 <header>
 	<h1><?php 
 	bloginfo('name'); //Displays the site title you chose when you created your site. Can be changed in Settings>General

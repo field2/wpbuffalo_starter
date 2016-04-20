@@ -1,10 +1,17 @@
-<!-- single.php
-This file loads when someone visits a single blog post. It's the "permalink" of the post. -->
+<!--
+Template name: sidebar left
+
+-->
+<!-- page.php
+This file loads whenever someone visits a page, assuming it's not the home page, the blog page, or several other page types that may override it in the theme's hierarchy. -->
 <?php // Use php to process the next line of code
 get_header(); // this command loads header.php and adds all the code in that file to the top of this file
 ?><!--  All done using php for now -->
 <!-- everything above here will be on all  the pages of the site -->
 <!-- the loop -->
+<div id="sidebar"><!-- create the sidebar widgets div -->
+	<?php dynamic_sidebar('widgets'); ?>
+</div><!-- /#sidebar -->
 <div id="main"><!-- create the main content div -->
 <?php // Use php to process the next line of code 
 	if ( have_posts() ) : // Check if there is a post to display. 
@@ -24,9 +31,6 @@ get_header(); // this command loads header.php and adds all the code in that fil
 	endif; // All done, but we have to tell WordPress to move on. Otherwise, it thinks the rest of the code should only be displayed if no posts are found.
 ?><!--  All done using php for now -->
 </div><!-- /#main -->
-<div id="sidebar"><!-- create the sidebar widgets div -->
-	<?php dynamic_sidebar('widgets'); ?>
-</div><!-- /#sidebar -->
 <!-- everything below here will be on all the pages of the site -->
 <?php // Use php to process the next line of code
 get_footer(); // this command loads footer.php and adds all the code in that file to the bottom of this file
